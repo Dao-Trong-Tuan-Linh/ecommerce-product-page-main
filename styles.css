@@ -49,6 +49,126 @@ body{
     text-decoration: none;
   }
 
+  .cart-user--content.active{
+    height:227px;
+    transition: all 0.5s ease-out;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .cart-user--number{
+    position: absolute;
+    top:0;
+    left:10px;
+    color:white;
+    text-align: center;
+    font-weight: 700;
+    line-height: 20px;
+    width: 30px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--Orange);
+    display: none;
+  }
+
+  .cart-user--number.active{
+    position: absolute;
+    top:0;
+    left:10px;
+    color:white;
+    text-align: center;
+    font-weight: 700;
+    line-height: 20px;
+    width: 30px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--Orange);
+    display: inline-block;
+  }
+
+  .cart-user--header{
+    padding: 1rem;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    z-index: 1;
+  }
+
+  .cart-user--body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 170px;
+    padding: 1rem;
+    
+  }
+
+  .cart-user--empty.hidden{
+   display: none;
+  }
+
+  .user-cart--btn{
+    width: 100%;
+    display: none;
+  }
+
+  .user-cart--btn.active{
+    display: block;
+  }
+
+  .cart-user--goods{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  
+
+  .cart-goods--img{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    
+  }
+
+ 
+
+  .cart-goods--name,.cart-goods--price,.cart-goods--number{
+    color:var(--Dark-grayish-blue);
+  }
+
+  .cart-goods--result{
+    font-weight: 700;
+  }
+
+  .cart-goods--remove{
+    display: inline-block;
+    cursor: pointer;
+    fill:#C3CAD9;
+  }
+
+  .cart-goods--remove:hover{
+    fill:var(--Black);
+  }
+
+  .btn-check{
+    width: 100%;
+    padding:1rem 0;
+    background-color: var(--Orange);
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    border-radius: 10px;
+    margin-top: 1rem;
+   display: block;
+
+  }
+
+  .btn-check:hover{
+    opacity: 0.7;
+  }
+
   
   
 
@@ -181,125 +301,7 @@ body{
     transition: all 0.2s;
   }
 
-  .cart-user--content.active{
-    height:227px;
-    transition: all 0.5s ease-out;
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-  }
-
-  .cart-user--number{
-    position: absolute;
-    top:0;
-    left:10px;
-    color:white;
-    text-align: center;
-    font-weight: 700;
-    line-height: 20px;
-    width: 30px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: var(--Orange);
-    display: none;
-  }
-
-  .cart-user--number.active{
-    position: absolute;
-    top:0;
-    left:10px;
-    color:white;
-    text-align: center;
-    font-weight: 700;
-    line-height: 20px;
-    width: 30px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: var(--Orange);
-    display: inline-block;
-  }
-
-  .cart-user--header{
-    padding: 1rem;
-    border-bottom: 1px solid rgb(220, 220, 220);
-    z-index: 1;
-  }
-
-  .cart-user--body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 170px;
-    padding: 1rem;
-    
-  }
-
-  .cart-user--empty.hidden{
-   display: none;
-  }
-
-  .user-cart--btn{
-    width: 100%;
-    display: none;
-  }
-
-  .user-cart--btn.active{
-    display: block;
-  }
-
-  .cart-user--goods{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  
-
-  .cart-goods--img{
-    width: 40px;
-    height: 40px;
-    border-radius: 3px;
-    
-  }
-
  
-
-  .cart-goods--name,.cart-goods--price,.cart-goods--number{
-    color:var(--Dark-grayish-blue);
-  }
-
-  .cart-goods--result{
-    font-weight: 700;
-  }
-
-  .cart-goods--remove{
-    display: inline-block;
-    cursor: pointer;
-    fill:#C3CAD9;
-  }
-
-  .cart-goods--remove:hover{
-    fill:var(--Black);
-  }
-
-  .btn-check{
-    width: 100%;
-    padding:1rem 0;
-    background-color: var(--Orange);
-    text-align: center;
-    font-weight: 700;
-    color: white;
-    border-radius: 10px;
-    margin-top: 1rem;
-   display: block;
-
-  }
-
-  .btn-check:hover{
-    opacity: 0.7;
-  }
 
   /*Main*/
   .main{
