@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+<header id="myHeader" class="header">
+  <nav class="logo-list">
+    <div class="menu-logo">
+      <img class="menu" src="./images/icon-menu.svg" alt="icon-menu">
+      <img class="logo" src="./images/logo.svg" alt="logo">
+    </div>
+    <ul class="list-link">
+      <li class="item-close">
+        <i id="close" class="fa-solid fa-xmark"></i>
+      </li>
+      <li class="item">
+        <a class="item-link" href="#">Collections</a>
+      </li>
+      <li class="item">
+        <a class="item-link" href="#">Men</a>
+      </li>
+      <li class="item">
+        <a class="item-link" href="#">Women</a>
+      </li>
+      <li class="item">
+        <a class="item-link" href="#">About</a>
+      </li>
+      <li class="item">
+        <a class="item-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="cart-user">
+    <span class="link-cart">
+      <svg class="cart" width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+        <path  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"  fill-rule="nonzero"/>
+      </svg>
+
+      <span class="cart-user--number"></span>
+      <div class="cart-user--content">
+        <header class="cart-user--header">
+          <h3>Cart</h3>
+        </header>
+        <main class="cart-user--body">
+           <h4 class="cart-user--empty">Your cart is empty</h4>
+         <div class="user-cart--btn">
+          <div class="cart-user--goods">
+            <img class="cart-goods--img" src="./images/image-product-1-thumbnail.jpg" alt="goods-img">
+            <div class="cart-goods--info">
+              <span class="cart-goods--name">Fall Limited Edition Sneakers</span>
+              <div class="cart-goods--total">
+                <span class="cart-goods--price">$125.00</span> x <span class="cart-goods--number"></span>
+                <span class="cart-goods--result">$</span>
+              </div>
+      
+              
+            </div>
+      
+            <div class="cart-goods--remove">
+              <svg width="14" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4.5 6.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Z" id="a"/></defs><use fill-rule="nonzero" xlink:href="#a"/></svg>
+            </div>
+          </div>
+      
+          <a href="#" class="btn-check">Checkout</a>
+         </div>
+        </main>
+      </div>
+
+     
+    </span>
+    <img class="img-avatar" src="./images/image-avatar.png" alt="avatar">
+
+
+  </nav>
+</header>
+
+
+
+<main id="myMain" class="main">
+  <div class="container flex">
+    <section class="img-section">
+     <div class="box-img">
+      <img class="img-product active option-1" src="./images/image-product-1.jpg" alt="product">
+      <img class="img-product option-2" src="./images/image-product-2.jpg" alt="product">
+      <img class="img-product option-3" src="./images/image-product-3.jpg" alt="product">
+      <img class="img-product option-4" src="./images/image-product-4.jpg" alt="product">
+     </div>
+
+      <div class="box-product mt-3rem">
+        <img class="product-item border-item " src="./images/image-product-1-thumbnail.jpg" data-tab="1" alt="product-1-thumbnail">
+        <img class="product-item " src="./images/image-product-2-thumbnail.jpg" data-tab="2" alt="product-2-thumbnail">
+        <img class="product-item " src="./images/image-product-3-thumbnail.jpg" data-tab="3" alt="product-3-thumbnail">
+        <img class="product-item " src="./images/image-product-4-thumbnail.jpg" data-tab="4" alt="product-4-thumbnail">
+      </div>
+    </section>
+
+   
+    <section class="content-section">
+      <h3 class="primary-heading">SNEAKER COMPANY</h3>
+      <h1 class="product-heading">Fall Limited Edition Sneakers</h1>
+      <p class="product-details">These low-profile sneakers are your perfect casual wear companion. 
+      Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+      <div class="price-section">
+        <div class="product-price">
+          <span class="price-item">$125.00</span>
+          <span class="discount-item">50%</span>
+        </div>
+        <span class="old-price--item">$250.00</span>
+      </div>
+
+      <div class="list-btn">
+        <div class="number-box">
+          <button class="button" id="decrease">
+            <img src="./images/icon-minus.svg" alt="previous">
+          </button>
+          <span class="amount">0</span>
+          <button class="button" id="increase">
+            <img src="./images/icon-plus.svg" alt="plus">
+          </button>
+        </div>
+
+        <button class="btn">
+          <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#fff" fill-rule="nonzero"/></svg>
+          Add to cart</button>
+      </div>
+
+
+    </section>
+  </div>
+</main>
+
+<div id="myModal" class="modal-active">
+  <div class="modal-content">
+    <div class="img-content">
+      <div class="slide">
+        <div class="slider">
+          <img src="./images/image-product-1.jpg" alt="image-product-1" class="main-img">
+        </div>
+        <div class="slider">
+          <img src="./images/image-product-2.jpg" alt="image-product-1" class="main-img">
+        </div>
+        <div class="slider">
+          <img src="./images/image-product-3.jpg" alt="image-product-1" class="main-img">
+        </div>
+        <div class="slider">
+          <img src="./images/image-product-4.jpg" alt="image-product-1" class="main-img">
+        </div>
+             
+      </div>
+      <span class="close-modal">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+        <button class="pre">
+          <img src="./images/icon-previous.svg" alt="previous">
+        </button>
+        <button class="next">
+          <img src="./images/icon-next.svg" alt="next">
+        </button>
+        
+    </div>
+
+    <div class="box-product--second mt-1rem">
+      <img class="product-item--second item-active" src="./images/image-product-1-thumbnail.jpg" data-tab="0" alt="product-1-thumbnail">
+      <img class="product-item--second " src="./images/image-product-2-thumbnail.jpg" data-tab="1" alt="product-2-thumbnail">
+      <img class="product-item--second " src="./images/image-product-3-thumbnail.jpg" data-tab="2" alt="product-3-thumbnail">
+      <img class="product-item--second " src="./images/image-product-4-thumbnail.jpg" data-tab="3" alt="product-4-thumbnail">
+    </div>
+
+    
+  </div>
+</div>
+
+<div class="bg-color"></div>
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">TL02</a>.
+</div>
+
+  <script src="main.js"></script>
+ 
+</body>
+</html>
