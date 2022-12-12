@@ -103,9 +103,7 @@ root{
       display: inline-block;
     }
 
-    .slide {
-       
-    }
+    
 
     .box-product{
         display: none;
@@ -174,10 +172,7 @@ root{
     background-color: rgba(0, 0, 0, 0.7);
    }
 
-   .img-content{
-    
    
-   }
 
    .slide{
     position: relative;
@@ -298,6 +293,10 @@ root{
     padding: 1rem;
   }
 
+  .amount{
+    font-weight: 700;
+  }
+
   .btn{
     width:100%;
     padding: 1rem 2rem;
@@ -313,6 +312,8 @@ root{
   .btn:hover{
     opacity: 0.7;
   }
+
+
 
   
 
